@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBrasil Telecom</title>
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="module" src="script/carrosel.js" denfer></script>
 </head>
 <body class="w-screen">
     <header class="bg-zinc-900">
-        <div class="max-w-6xl mx-auto py-5 text-white flex justify-between items-center">
+        <div class="max-w-6xl mx-auto p-5 text-white flex justify-between items-center">
             <div class="text-3xl">
                 Logo
             </div>
@@ -23,14 +27,90 @@
         </div>
     </header>
     <main>
-        <section>
-            <!-- <div class="max-w-md">
-                <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
-            </div> -->
+        <section class="py-6">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+                <div class="my-slider-progress bg-[#ccc]">
+                    <div class="my-slider-progress-bar bg-green-500 h-[2px] transition-all w-0"></div>
+                </div>
+            </div>
         </section>
+        <section class="max-w-6xl mx-auto p-5">
+            <div class="text-center text-5xl font-roboto font-light mb-4">
+                <h1>Serviços</h1>
+            </div>
+            <div class="flex gap-2 flex-wrap justify-around ">
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                    <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
+                    <div class="flex flex-col gap-2 py-2 px-4">
+                        <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
+                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                    <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
+                    <div class="flex flex-col gap-2 py-2 px-4">
+                        <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
+                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                    <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
+                    <div class="flex flex-col gap-2 py-2 px-4">
+                        <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
+                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                    <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
+                    <div class="flex flex-col gap-2 py-2 px-4">
+                        <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
+                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                    <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
+                    <div class="flex flex-col gap-2 py-2 px-4">
+                        <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
+                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                    <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
+                    <div class="flex flex-col gap-2 py-2 px-4">
+                        <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
+                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section>
+            <div>
+                <div>
+                    <h1>Contato</h1>
+                </div>
+                <div>
+                    <form action="">
+
+                    </form>
+                </div>
+            </div>
+        </section> -->
     </main>
     <footer class="bg-zinc-950">
-        <div class="text-white max-w-6xl mx-auto py-6">
+        <div class="text-white max-w-6xl mx-auto py-6 px-5">
             <div class="pb-5 flex justify-start gap-36">
                 <div class="max-w-md text-start flex flex-col gap-6">
                     <h1 class="text-3xl">
