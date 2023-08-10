@@ -1,20 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
-  theme: {
-    extend: {
-      fontFamily: {
-        'roboto': 'Roboto',
-        'josefin': 'Josefin Sans'
-      },
-      backgroundColor: {
-        'green-terceira': '#8CE695'
-      },
-      border: {
-        'green-terceira': '#8CE695'
-      }
-    },
-  },
-  plugins: [],
-}
+module.exports = {}
 
+/**
+ * Por conta de extensão não consigo fazer as configurações por aqui, coloquei tudo no config.js
+ */

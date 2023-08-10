@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBrasil Telecom</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="css/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="module" src="script/carrosel.js" denfer></script>
 </head>
-<body class="w-screen">
-    <header class="bg-zinc-900">
-        <div class="max-w-6xl mx-auto p-5 text-white flex justify-between items-center">
+<body>
+    <header class="bg-background">
+        <div class="max-w-6xl mx-auto p-5 text-white flex justify-between items-center ">
             <div class="text-3xl">
                 Logo
             </div>
-            <div class="flex flex-col gap-[6px] py-3 px-4 border-[1px] border-solid border-zinc-700 rounded-md">
-                <span class="bg-zinc-300 w-8 h-[2px]"></span>
-                <span class="bg-zinc-300 w-8 h-[2px]"></span>
-                <span class="bg-zinc-300 w-8 h-[2px]"></span>
+            <div class="md:hidden cursor-pointer flex flex-col gap-[6px] py-3 px-4 border-[1px] border-solid border-green-tertiary rounded">
+                <span class="bg-gree-tertiary w-8 h-[2px]"></span>
+                <span class="bg-gree-tertiary w-8 h-[2px]"></span>
+                <span class="bg-gree-tertiary w-8 h-[2px]"></span>
+            </div>
+            <div class="hidden md:block">
+                <nav>
+                    <ul class="flex gap-5 px-3 items-center ">
+                        <li class="hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
+                            <a href="#servicos">Serviços</a>
+                        </li>
+                        <li class="hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
+                            <a href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -41,73 +58,73 @@
                 </div>
             </div>
         </section>
-        <section class="max-w-6xl mx-auto p-5">
-            <div class="text-center text-5xl font-roboto font-light mb-4">
+        <section id="servicos" class="max-w-6xl mx-auto p-5">
+            <div class="text-center text-6xl font-roboto font-light mb-8 text-green-tertiary opacity-40">
                 <h1>Serviços</h1>
             </div>
             <div class="flex gap-2 flex-wrap justify-around ">
-                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-green-secondary">
                     <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
                     <div class="flex flex-col gap-2 py-2 px-4">
                         <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
-                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-black">Saiba mais</button>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-green-secondary">
                     <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
                     <div class="flex flex-col gap-2 py-2 px-4">
                         <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
-                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-black">Saiba mais</button>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-green-secondary">
                     <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
                     <div class="flex flex-col gap-2 py-2 px-4">
                         <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
-                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-black">Saiba mais</button>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-green-secondary">
                     <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
                     <div class="flex flex-col gap-2 py-2 px-4">
                         <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
-                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-black">Saiba mais</button>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-green-secondary">
                     <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
                     <div class="flex flex-col gap-2 py-2 px-4">
                         <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
-                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-black">Saiba mais</button>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-zinc-200">
+                <div class="flex flex-col gap-2 max-w-xs border-2 mb-5 border-green-secondary">
                     <img class="w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" alt="">
                     <div class="flex flex-col gap-2 py-2 px-4">
                         <h2 class="text-2xl font-semibold font-roboto">Serviço 1</h2>
-                        <p class="font-josefin ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-white">Saiba mais</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
+                        <button class="bg-green-600 hover:bg-green-400 py-1 px-2 text-lg text-black">Saiba mais</button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section>
+        <section id="contato" class="bg-green-secundaria">
             <div>
                 <div>
                     <h1>Contato</h1>
                 </div>
                 <div>
                     <form action="">
-
+                        <input type="text">
                     </form>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
     <footer class="bg-zinc-950">
         <div class="text-white max-w-6xl mx-auto py-6 px-5">
