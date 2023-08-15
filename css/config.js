@@ -16,6 +16,7 @@ tailwind.config = {
       },
       backgroundColor: {
         'background': '#212429',
+        'secundary': '#f1fff2',
         green: {
           primary: '#0AD11B',
           secondary: '#88EB90',
@@ -24,6 +25,7 @@ tailwind.config = {
         },
       },
       borderColor: {
+        'background': "#212429",
         'green-background': '#04520B',
         'green-primary': '#0AD11B',
         'green-secondary': '#88EB90',
