@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="css/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="module" src="script/carrosel.js" denfer></script>
+    <script type="module" src="script/script.js" denfer></script>
 </head>
 <body>
     <header class="bg-background">
@@ -21,26 +23,24 @@
             <div class="text-3xl">
                 Logo
             </div>
-            <div class="md:hidden cursor-pointer flex flex-col gap-[6px] py-3 px-4 border-green-tertiary hover:border-y">
-                <span class="bg-green-tertiary w-8 h-[2px]"></span>
-                <span class="bg-green-tertiary w-8 h-[2px]"></span>
-                <span class="bg-green-tertiary w-8 h-[2px]"></span>
-            </div>
-            <div class="hidden md:block">
-                <nav>
-                    <ul class="flex gap-5 px-3 items-center ">
-                        <li class="hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
-                            <a href="#servicos">Serviços</a>
-                        </li>
-                        <li class="hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
-                            <a href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <div id="menu-hamburguer" class="md:hidden cursor-pointer flex flex-col gap-[6px] py-3 px-4 border-green-tertiary hover:border-y">
+                    <span class="bg-green-tertiary w-8 h-[2px]"></span>
+                    <span class="bg-green-tertiary w-8 h-[2px]"></span>
+                    <span class="bg-green-tertiary w-8 h-[2px]"></span>
+                </div>
+                <ul id="list-menu" class="hidden md:flex px-3 items-center gap-5">
+                    <li class="desable-menu hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="desable-menu hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <li class="desable-menu hover:text-green-primary hover:border-green-primary hover:border-b-4 transition-all cursor-pointer text-xl">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>

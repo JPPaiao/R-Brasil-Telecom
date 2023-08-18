@@ -1,0 +1,14 @@
+.show-nav {
+    display: flex;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    padding: 16px 12px; 
+    z-index: 10;
+    background-color: #212429;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.25rem;
+}
