@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="css/style.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="css/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script type="module" src="script/carrosel.js" denfer></script>
-    <script type="module" src="script/showMenus.js" denfer></script>
+    <script type="module" src="css/config.js"></script>
+    <script type="module" src="script/carrosel.js" defer></script>
+    <script type="module" src="script/showMenus.js" defer></script>
+    <script src="script/copy.js" defer></script>
 </head>
 <body>
     <header class="bg-background fixed top-0 right-0 w-full z-10 scroll-smooth">
@@ -51,21 +52,21 @@
                         <li class="splide__slide w-full min-w-[780px]">
                             <img 
                                 src="https://backend.intelbras.com/sites/default/files/styles/large/public/2020-01/Foto_Controle_de_acesso_site.png" 
-                                alt=""
+                                alt="Foto controle de acesso"
                                 class="w-full h-full"
                             >
                         </li>
                         <li class="splide__slide w-full min-w-[780px]">
                             <img 
                                 src="https://backend.intelbras.com/sites/default/files/styles/large/public/2019-02/seguranca_590x360.jpg" 
-                                alt=""
+                                alt="Camera de segurança"
                                 class="w-full h-full"
                             >
                         </li>
                         <li class="splide__slide w-full min-w-[780px]">
                             <img 
                                 src="https://backend.intelbras.com/sites/default/files/styles/large/public/2023-08/card-mini-banner-energia-solar-intelbras.jpg" 
-                                alt=""
+                                alt="banner energia solar intelbras"
                                 class="w-full h-full"
                             >
                         </li>
@@ -171,13 +172,17 @@
                             </a>
                         </div>
                         <div class="w-full border-b border-t hover:border-b-2 hover:border-t-2 border-background hover:border-green-tertiary border-opacity-50 px-5 py-6">
-                            <a 
-                                class="flex gap-2 flex-col justify-center items-center"
-                                href="#"
+                            <div 
+                                class="btn flex gap-2 flex-col justify-center items-center cursor-pointer"                             
+                                onclick="copyText()"
                             >
                                 <img class="w-20 md:w-14" src="assets/gmail.svg" alt="Icone do instagram">
-                                <span>rbrasil.telecom@gmail.com</span>
-                            </a>
+                                <span id="copy">rbrasil.telecom@gmail.com</span>
+                                <div id="copy-confirmed" class="hidden flex-col items-center absolute bottom-[-125.8rem] z-10">
+                                    <span class="relative top-4 w-5 h-5 bg-background rotate-45"></span>
+                                    <span class="relative bg-background text-white px-2 py-[1px] rounded text-sm">Copiado!</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
