@@ -1,7 +1,8 @@
-let copy = document.getElementById('copy')
-let mensage = document.getElementById('copy-confirmed')
 
 function copyText() {
+    let copy = document.getElementById('copy')
+    let mensage = document.getElementById('copy-confirmed')
+    
     navigator.clipboard.writeText(copy.textContent)
     mensage.classList.remove('hidden')
     mensage.classList.add('flex')
