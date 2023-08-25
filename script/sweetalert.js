@@ -1,4 +1,5 @@
 let form = document.getElementById('sendEmail')
+let copy = document.getElementById('copy')
 
 form.addEventListener('submit', () => {
     Swal.fire({
@@ -12,5 +13,19 @@ form.addEventListener('submit', () => {
         hideClass: {
             popup: 'animate__animated animate__fadeOutUp'
         }
+    })
+})
+
+copy.addEventListener('click', () => {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+    })
+    Toast.fire({
+        icon: 'success',
+        title: 'Email copiado com sucesso'
     })
 })
