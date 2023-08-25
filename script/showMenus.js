@@ -8,12 +8,8 @@ function showMenus(add, remove) {
     active = !active
 }
 
-handleMenu.addEventListener('click', (e) => {
-    (!active) ? showMenus('hidden', 'show-nav') : showMenus('show-nav', 'hidden')
-})
+handleMenu.addEventListener('click', (e) => (!active) ? showMenus('hidden', 'show-nav') : showMenus('show-nav', 'hidden'))
 
-for (let i=0; i < showMenu.children.length; i++) {
-    showMenu.children[i].addEventListener('click', (e) => {
-        showMenus('hidden', 'show-nav')
-    })
+for (let menu in showMenu.children) {
+    menu.addEventListener('click', (e) => showMenus('hidden', 'show-nav'))
 }
