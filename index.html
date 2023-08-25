@@ -81,9 +81,9 @@
                 </div>
             </div>
         </section>
-        <section id="modal" class="fixed flex justify-center items-center top-0 right-0 bottom-0 left-0 transition-all z-20 opacity-0 pointer-events-none target:pointer-events-auto target:opacity-95 bg-black w-100% h-screen">
-            <div class="max-w-3xl bg-[#ededed] w-full h-[520px] z-50 relative flex justify-center flex-col">
-                <div class="flex flex-col justify-between h-full border-green-secondary border-t border-x">
+        <section id="modal" class="fixed flex justify-center items-center top-0 right-0 bottom-0 left-0 transition-all duration-200 ease-in z-20 opacity-0 pointer-events-none target:pointer-events-auto target:opacity-100 w-100% h-screen">
+            <div class="max-w-3xl bg-[#ededed] w-full h-[500px] z-50 relative flex justify-center flex-col shadow-modal">
+                <div class="flex flex-col justify-between h-full rounded-3xl">
                     <div class="max-h-48 w-full">
                         <div>
                             <img class="img-modal w-full" src="https://backend.intelbras.com/sites/default/files/styles/large/public/2020-01/Foto_Controle_de_acesso_site.png" alt="Foto controle de acesso">
@@ -93,11 +93,10 @@
                         <h1 id="title-modal" class="text-2xl font-roboto py-3">Serviço</h1>
                         <div>
                             <p class="texts-modal">lorem</p>
-                            <p class="texts-modal">lorem</p>
                         </div>
                     </div>
                 </div>
-                <a href="#close" title="close" class="w-full p-3 text-center text-2xl bg-green-600">Sair</a>
+                <a href="#close" title="close" class="w-full p-3 text-center text-2xl bg-green-600 hover:bg-green-500 font-bold">Sair</a>
             </div>
         </section>
         <section id="servicos" class="max-w-6xl mx-auto px-5 py-10">
@@ -110,7 +109,7 @@
                     <div class="flex flex-col gap-2 py-2 px-4 border-b-2 border-x-2 border-green-secondary">
                         <h2 class="text-xl font-roboto">Controle de acesso</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <a href="#modal" onclick="modal('ControleAcesso')" class="btn-modal bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
+                        <a href="#modal" onclick="modal('ControleAcesso')" class="bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
                     </div>
                 </div>
                 <div class="flex flex-col mb-5 max-w-md md:max-w-xs">
@@ -118,7 +117,7 @@
                     <div class="flex flex-col gap-2 py-2 px-4 border-b-2 border-x-2 border-green-secondary">
                         <h2 class="text-xl font-roboto">Sistema de Monitoramento</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <a href="#modal" onclick="modal('SistemaMonitoramento')" class="btn-modal bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
+                        <a href="#modal" onclick="modal('SistemaMonitoramento')" class="bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
                     </div>
                 </div>
                 <div class="flex flex-col mb-5 max-w-md md:max-w-xs">
@@ -126,7 +125,7 @@
                     <div class="flex flex-col gap-2 py-2 px-4 border-b-2 border-x-2 border-green-secondary">
                         <h2 class="text-xl font-roboto">Redes Cabeadas e Wireless</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <a href="#modal" onclick="modal('RedesCabeadasWireless')" class="btn-modal bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
+                        <a href="#modal" onclick="modal('RedesCabeadasWireless')" class="bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
                     </div>
                 </div>
                 <div class="flex flex-col mb-5 max-w-md md:max-w-xs">
@@ -134,7 +133,7 @@
                     <div class="flex flex-col gap-2 py-2 px-4 border-b-2 border-x-2 border-green-secondary">
                         <h2 class="text-xl font-roboto">Automação</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <a href="#modal" onclick="modal('Automação')" class="btn-modal bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
+                        <a href="#modal" onclick="modal('Automação')" class="bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
                     </div>
                 </div>
                 <div class="flex flex-col mb-5 max-w-md md:max-w-xs">
@@ -142,7 +141,7 @@
                     <div class="flex flex-col gap-2 py-2 px-4 border-b-2 border-x-2 border-green-secondary">
                         <h2 class="text-xl font-roboto">Informática</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <a href="#modal" onclick="modal('Informática')" class="btn-modal bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
+                        <a href="#modal" onclick="modal('Informática')" class="bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
                     </div>
                 </div>
                 <div class="flex flex-col mb-5 max-w-md md:max-w-xs">
@@ -150,7 +149,7 @@
                     <div class="flex flex-col gap-2 py-2 px-4 border-b-2 border-x-2 border-green-secondary">
                         <h2 class="text-xl font-roboto">Serviço 6</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure tempora, dolor fuga nemo deserunt error pariatur debitis beatae</p>
-                        <a href="#modal" onclick="modal('Serviço6')" class="btn-modal bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
+                        <a href="#modal" onclick="modal('Serviço6')" class="bg-green-600 hover:bg-green-500 transition-all my-2 py-1 px-2 text-lg text-center text-black">Saiba mais</a>
                     </div>
                 </div>
             </div>

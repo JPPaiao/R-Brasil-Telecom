@@ -11,6 +11,9 @@ module.exports = {
     content: ['../*.{html,js}'],
     theme: {
         extend: {
+            boxShadow: {
+                'modal': '0px 4px 10px 0px #000'
+            },
             fontFamily: {
                 'roboto': 'Roboto',
                 'josefin': 'Josefin Sans'
